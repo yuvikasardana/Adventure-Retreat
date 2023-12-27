@@ -30,9 +30,9 @@ const User = require('./models/user')
 const mongoSanitize=require('express-mongo-sanitize')
 const helmet =require('helmet');//for security issues
 //changing or manipulating the behaviour of headers for security
-//const dbUrl=process.env.DB_URL
+const dbUrl=process.env.DB_URL
 const MongoStore= require('connect-mongo');
-const dbUrl="mongodb://localhost:27017/yelp-camp";
+//const dbUrl="mongodb://localhost:27017/yelp-camp";
 
 
 mongoose.connect(dbUrl,{ 
@@ -221,4 +221,3 @@ app.listen(3000,()=>{
 ///register : get rquest to show use the form
 // /register : POST request to actually creat a user
 //logout route
-//mongo password:n9PDyS6SOSApNySf
