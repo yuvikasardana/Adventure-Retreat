@@ -13,7 +13,7 @@ module.exports.createUser = async (req,res)=>{
         if(err){
             return next(err);
         }
-        req.flash('success','Welcome to yelpcamp')
+        req.flash('success','Welcome to adventure-retreat')
        res.redirect('/campgrounds')
     })
        //takes the new user and then hashes the password and then stores it on the new user
